@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+* {
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nova Square',
+		sans-serif;
+}
+
+.fetch-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #3498db;
+	color: #3498db;
+	background-color: transparent;
+	border-radius: 5px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.fetch-btn:hover {
+	background-color: #3498db;
+	color: #fff;
+}
+
+.inner-container {
+	display: flex;
+	min-width: 29rem;
+	margin-top: 12px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #3498db;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inner-container:hover {
+	transform: scale(1.05);
+}
+
+.main-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: start;
+	place-content: center;
+}
+
+.user-container {
+	max-height: 42rem;
+	overflow: auto;
+	overflow-y: scroll;
+}
+
+.user-details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	min-width: 32rem;
+
+}
+
+.inner-user-details {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 12px;
+	border: 2px solid blanchedalmond;
+	padding: 20px;
+	overflow: scroll;
+}
