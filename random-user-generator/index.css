@@ -8,9 +8,10 @@
 		sans-serif;
 }
 
-.fetch-btn {
+.fetch-btn,
+.fetch-github-profile {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 5px 6px;
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
@@ -22,7 +23,13 @@
 	transition: background-color 0.3s, color 0.3s;
 }
 
-.fetch-btn:hover {
+.fetch-btn:hover,
+.fetch-github-profile:hover {
+	cursor: pointer;
+}
+
+.fetch-btn:hover,
+.fetch-github-profile:hover {
 	background-color: #3498db;
 	color: #fff;
 }
@@ -31,12 +38,13 @@
 	display: flex;
 	min-width: 29rem;
 	margin-top: 12px;
+	gap: 2;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border: 2px solid #3498db;
 	border-radius: 10px;
-	padding: 20px;
+	padding: 3px;
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -46,9 +54,11 @@
 }
 
 .main-container {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+		height: 100%;
 	display: flex;
+	gap: 1rem;
+		flex-wrap: wrap-reverse;
 	align-items: start;
 	place-content: center;
 }
@@ -76,6 +86,6 @@
 	flex-direction: column;
 	margin-top: 12px;
 	border: 2px solid blanchedalmond;
-	padding: 20px;
+	padding: 2px;
 	overflow: scroll;
 }

@@ -10,6 +10,7 @@
 			title="random user Generator Styles"
 		/>
 	</head>
+
 	<body>
 		<div class="main-container">
 			<div class="inner-container">
@@ -18,7 +19,26 @@
 				<!-- Here we insert the random user Details  -->
 				<div class="user-container"></div>
 			</div>
+			<div class="inner-container">
+				<h1 class="title">Github User Profile</h1>
+				<div style="display: flex;width: 100%;justify-content: center;flex-direction: column;place-items: center;gap: 1rem;">
+					<input
+						type="text"
+						id="github-username"
+						value="arunkumar201"
+						class="github-username"
+						style="width: 12rem;padding: 1rem;border: 2px solid gray;font-size: large;"
+						placeholder="Enter Github Username"
+					/>
+					<button class="fetch-github-profile" id="fetch-github-profile" style="width: fit-content;text-align: center;">
+						Get Github User
+					</button>
+				</div>
+				<!-- Here we insert the Github user Profile  -->
+				<div class="github-user-container"></div>
+			</div>
 		</div>
+
 		<script src="./app.js"></script>
 	</body>
 </html>
