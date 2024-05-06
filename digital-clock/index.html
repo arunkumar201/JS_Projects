@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" />
+		<title>Digital Clock using JS</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<div>
+				<h1 style="text-align: center">Digital Clock</h1>
+				<div class="clock">
+					<!-- Display the Date -->
+					<div
+						id="date"
+						style="
+							font-size: 33px;
+							margin-bottom: 2rem;
+							text-align: center;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							gap: 3px;
+							flex-direction: column;
+						"
+					>
+						<div class="DD"></div>
+						<div class="formatDD"></div>
+					</div>
+					<!-- Display the HH:MM:SS clock -->
+					<div
+						style="
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							gap: 2px;
+							font-size: 23px;
+						"
+					>
+						<div class="hours"></div>
+						<div class="point">:</div>
+						<div class="minutes"></div>
+						<div class="point">:</div>
+						<div class="seconds"></div>
+						<div class="point">:</div>
+						<div class="milliseconds"></div>
+						<!-- Display the AM/PM -->
+						<div class="ampm" style="margin-left: 1pc;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./app.js" />
+	</body>
+</html>
